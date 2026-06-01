@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: major-recommender-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app --bind 0.0.0.0:$PORT
+    healthCheckPath: /api/health

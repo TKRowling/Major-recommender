@@ -1,0 +1,48 @@
+# Python cache
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+venv/
+venv311/
+.venv/
+backend/venv/
+backend/venv311/
+backend/.venv/
+
+# Environment variables
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Flask / runtime
+backend/instance/
+backend/logs/
+*.log
+
+# Node / Vite
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Keep deployment-critical model/RAG files in Git
+!backend/app/models/*.pkl
+!backend/app/vector_store/*.faiss
+!backend/app/vector_store/*.pkl
+!backend/app/data/*.json

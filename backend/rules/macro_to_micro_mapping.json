@@ -1,0 +1,86 @@
+{
+  "Digital Technology": [
+    "Data Science",
+    "Computer Science",
+    "Cyber Security",
+    "Software Engineering",
+    "Information Technology"
+  ],
+  "Education": [
+    "English Education",
+    "Mathematics Education",
+    "Science Education",
+    "Primary Education",
+    "Educational Management"
+  ],
+  "Financial Services": [
+    "Accounting",
+    "Finance",
+    "Banking",
+    "Economics",
+    "Auditing"
+  ],
+  "Agriculture": [
+    "Agronomy",
+    "Animal Science",
+    "Agribusiness",
+    "Plant Protection",
+    "Agricultural Engineering"
+  ],
+  "Advanced Manufacturing": [
+    "Mechanical Engineering",
+    "Industrial Engineering",
+    "Mechatronics",
+    "Manufacturing Engineering",
+    "Automation Engineering"
+  ],
+  "Healthcare & Human Services": [
+    "Nursing",
+    "Public Health",
+    "Pharmacy",
+    "Medical Laboratory",
+    "Social Work"
+  ],
+  "Energy & Natural Resources": [
+    "Environmental Science",
+    "Renewable Energy",
+    "Petroleum Engineering",
+    "Geology",
+    "Natural Resource Management"
+  ],
+  "Marketing & Sales": [
+    "Marketing",
+    "Digital Marketing",
+    "Sales Management",
+    "Brand Management",
+    "Market Research"
+  ],
+  "Construction": [
+    "Civil Engineering",
+    "Architecture",
+    "Construction Management",
+    "Surveying",
+    "Urban Planning"
+  ],
+  "Management & Entrepreneurship": [
+    "Business Administration",
+    "Entrepreneurship",
+    "Management",
+    "Human Resource Management",
+    "Project Management"
+  ],
+  "Arts, Entertainment & Design": [
+    "Graphic Design",
+    "Interior Design",
+    "Animation",
+    "Media Production",
+    "Fashion Design"
+  ],
+  "Others": [
+    "General Studies",
+    "Interdisciplinary Studies",
+    "Liberal Arts",
+    "Community Development",
+    "Public Administration"
+  ]
+}

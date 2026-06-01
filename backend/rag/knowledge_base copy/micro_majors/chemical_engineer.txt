@@ -1,0 +1,28 @@
+Major: Chemical Engineering
+
+Description:
+Chemical Engineering focuses on applying chemistry, mathematics, physics, and engineering principles to design, improve, and operate processes that transform raw materials into useful products. It is used in areas such as manufacturing, food processing, environmental management, energy, and industrial production.
+
+Key Topics:
+Chemistry, Process Engineering, Chemical Reaction Engineering, Thermodynamics, Fluid Mechanics, Heat and Mass Transfer, Process Control, Environmental Management, Materials Processing, Industrial Safety
+
+Required Skills:
+Analytical thinking, problem-solving, mathematics ability, laboratory skills, attention to detail, critical thinking, technical understanding, teamwork
+
+Recommended High School Subjects:
+Chemistry, Mathematics, Physics, English, Biology
+
+Related Majors:
+Food Engineering, Environmental Engineering, Materials Engineering, Biotechnology, Industrial Engineering
+
+Suggested Projects:
+Water treatment process model, small-scale chemical production design, heat transfer experiment, food processing improvement project, waste reduction system, process safety case study
+
+Possible Careers:
+Chemical Engineer, Process Engineer, Production Engineer, Quality Control Engineer, Environmental Engineer, Plant Engineer, Research Assistant
+
+Universities in Cambodia:
+Institute of Technology of Cambodia (ITC), Royal University of Phnom Penh (RUPP)
+
+Beginner Roadmap:
+Build strong chemistry and mathematics foundation -> Study physics and basic engineering concepts -> Learn laboratory safety and experimentation -> Understand thermodynamics and process principles -> Study heat and mass transfer -> Learn process control and industrial systems -> Practice with engineering projects -> Build technical and research experience

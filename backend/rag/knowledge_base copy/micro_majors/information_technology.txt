@@ -1,0 +1,28 @@
+Major: Information Technology
+
+Description:
+Information Technology focuses on using computer systems, software, networks, databases, and digital tools to manage, process, store, and support information in organizations. It combines technical knowledge, problem-solving, and system management to help businesses and institutions operate efficiently in a digital environment.
+
+Key Topics:
+Information Systems, Networking, Databases, Web Technologies, Programming Fundamentals, System Analysis, IT Infrastructure, Cybersecurity Basics, Cloud Computing, Digital Transformation
+
+Required Skills:
+Problem-solving, logical thinking, communication, teamwork, basic programming ability, technical understanding, adaptability, attention to detail
+
+Recommended High School Subjects:
+Mathematics, English, Computer, Physics
+
+Related Majors:
+Computer Science, Software Engineering, Management Information Systems, Cyber Security, Data Science
+
+Suggested Projects:
+Inventory management system, school database system, network setup simulation, website development project, help desk support tracker, small business information system
+
+Possible Careers:
+IT Support Specialist, System Administrator, Network Administrator, Database Administrator, Web Developer, IT Officer, Business Systems Analyst
+
+Universities in Cambodia:
+Royal University of Phnom Penh (RUPP), Paragon International University, Cambodia Academy of Digital Technology (CADT)
+
+Beginner Roadmap:
+Learn computer fundamentals -> Study basic programming -> Learn networking and internet concepts -> Study databases and information systems -> Practice web and system tools -> Learn cybersecurity and cloud basics -> Build simple IT projects -> Create a portfolio and gain practical experience

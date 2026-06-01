@@ -1,0 +1,28 @@
+Major: Computer Science
+
+Description:
+Computer Science focuses on the study of computers, software, algorithms, and computational systems. It combines programming, logical thinking, mathematics, and system design to develop software solutions, applications, and digital systems for different real-world needs.
+
+Key Topics:
+Programming, Data Structures, Algorithms, Database Systems, Operating Systems, Computer Networks, Web Development, Software Engineering, Computer Architecture, Artificial Intelligence
+
+Required Skills:
+Logical thinking, problem-solving, programming ability, analytical thinking, creativity, teamwork, communication, attention to detail
+
+Recommended High School Subjects:
+Mathematics, English, Computer, Physics
+
+Related Majors:
+Information Technology, Software Engineering, Data Science, Cyber Security, Artificial Intelligence
+
+Suggested Projects:
+Portfolio website, student management system, library system, mobile to-do app, e-commerce website, chatbot application, database management project
+
+Possible Careers:
+Software Developer, Web Developer, Mobile App Developer, Backend Developer, Frontend Developer, System Analyst, QA Engineer, Database Administrator
+
+Universities in Cambodia:
+Royal University of Phnom Penh (RUPP), Paragon International University, Cambodia University of Technology and Science (CamTech), Pannasastra University of Cambodia (PUC), Institute of Technology of Cambodia (ITC), Cambodia Academy of Digital Techology (CADT), The University of Cambodia, Setec Institute, American University of Phnom Penh (AUPP), Norton University, IT Academy STEP Cambodia Institute 
+
+Beginner Roadmap:
+Learn computer basics -> Study programming fundamentals -> Practice HTML, CSS, and JavaScript -> Learn one core language such as Python, Java, or C++ -> Study data structures and algorithms -> Learn databases and SQL -> Build software projects -> Create a portfolio

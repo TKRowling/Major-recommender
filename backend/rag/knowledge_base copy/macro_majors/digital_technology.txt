@@ -1,0 +1,31 @@
+Macro-Major: Digital Technology
+
+Description:
+Digital Technology focuses on using computer systems, software, data, and digital tools to solve problems, automate processes, and support innovation. It combines programming, data analysis, system design, and emerging technologies to build digital solutions for businesses, industries, and society.
+
+Common Micro-Majors:
+Computer Science, Information Technology, Data Science, Cyber Security, Software Engineering, Artificial Intelligence, Management of Information Systems, Computer Engineering, Network Engineering
+
+Key Topics:
+Programming, Data Structures, Algorithms, Databases, Networking, Cybersecurity, Software Development, Artificial Intelligence, Cloud Computing, Data Analytics, System Design
+
+Common Skills:
+Logical thinking, problem-solving, analytical thinking, computer skills, programming ability, attention to detail, adaptability, teamwork
+
+Recommended High School Subjects:
+Mathematics, English, Computer, Physics
+
+Common Careers:
+Software Developer, Data Analyst, Data Scientist, IT Support Specialist, System Administrator, Cyber Security Analyst, Network Engineer, AI Engineer, Web Developer
+
+Learning Style:
+Students in this field often work on coding projects, system development, problem-solving tasks, and hands-on technical assignments. The learning process involves practical implementation, debugging, and continuous improvement of digital solutions.
+
+Related Macro-Majors:
+Engineering, Management and Entrepreneurship, Science and Research
+
+Example Career Paths:
+- Software Development → Junior Developer → Software Engineer → Tech Lead
+- Data Science → Data Analyst → Data Scientist → Machine Learning Engineer
+- IT Support → IT Technician → System Administrator → IT Manager
+- Cyber Security → Security Analyst → Security Engineer → Security Consultant

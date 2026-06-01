@@ -1,0 +1,1850 @@
+{
+  "majors": [
+    {
+      "index": 1,
+      "major": "Mathematics",
+      "macro_major": "Science",
+      "prerequisites": [
+        "Mathematics",
+        "Physics"
+      ],
+      "duration_years": 4,
+      "credits": 140,
+      "description": "Builds strong foundations in mathematics and applied mathematics, including statistics and quantitative analysis.",
+      "possible_careers": [
+        "Mathematics lecturer/teacher",
+        "Government officer",
+        "Private company staff",
+        "NGO staff"
+      ],
+      "slug": "mathematics",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 1,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 2,
+      "major": "Physics",
+      "macro_major": "Science",
+      "prerequisites": [
+        "Physics",
+        "Mathematics"
+      ],
+      "duration_years": 4,
+      "credits": 153,
+      "description": "Covers core physics, electronics, mechanics, atomic and modern physics, with analytical and problem-solving training.",
+      "possible_careers": [
+        "Physics lecturer/teacher",
+        "Government officer",
+        "Private company staff",
+        "NGO staff"
+      ],
+      "slug": "physics",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 2,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 3,
+      "major": "Chemistry",
+      "macro_major": "Science",
+      "prerequisites": [
+        "Chemistry",
+        "Mathematics"
+      ],
+      "duration_years": 4,
+      "credits": 155,
+      "description": "Focuses on analytical, organic, inorganic, biological, and environmental chemistry plus lab practice.",
+      "possible_careers": [
+        "Chemistry lecturer/teacher",
+        "Laboratory staff",
+        "Industry staff",
+        "Food production staff"
+      ],
+      "slug": "chemistry",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 3,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 4,
+      "major": "Biology",
+      "macro_major": "Science",
+      "prerequisites": [
+        "Biology",
+        "Chemistry"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Studies biological foundations, anatomy, zoology, botany, microbiology, ecology, and related sciences.",
+      "possible_careers": [
+        "Biology lecturer/teacher",
+        "Laboratory staff",
+        "Government officer",
+        "Private company staff"
+      ],
+      "slug": "biology",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 4,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 5,
+      "major": "Computer Science / Information Technology",
+      "macro_major": "Digital Technology",
+      "prerequisites": [
+        "Mathematics",
+        "Physics"
+      ],
+      "duration_years": 4,
+      "credits": 164,
+      "description": "Covers systems analysis, software development, information systems management, databases, networking, and project work.",
+      "possible_careers": [
+        "Computer lecturer/teacher",
+        "Software developer",
+        "IT officer",
+        "Systems staff"
+      ],
+      "slug": "computer_science_information_technology",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 5,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 6,
+      "major": "Environmental Science",
+      "macro_major": "Energy & Natural Resources",
+      "prerequisites": [
+        "Biology",
+        "Chemistry"
+      ],
+      "duration_years": 4,
+      "credits": 153,
+      "description": "Studies ecology, environmental chemistry, waste management, water treatment, environmental law, and assessment.",
+      "possible_careers": [
+        "Environmental officer",
+        "Research staff",
+        "NGO staff",
+        "Private company staff"
+      ],
+      "slug": "environmental_science",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 6,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 7,
+      "major": "Biochemistry",
+      "macro_major": "Science",
+      "prerequisites": [
+        "Chemistry",
+        "Biology"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Combines chemistry and biology, including organic chemistry, biochemistry, biomolecules, and laboratory analysis.",
+      "possible_careers": [
+        "Chemistry lecturer/teacher",
+        "Laboratory staff",
+        "Industry staff",
+        "Food and beverage staff"
+      ],
+      "slug": "biochemistry",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 7,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 8,
+      "major": "Geological / Geo-Engineering Science",
+      "macro_major": "Energy & Natural Resources",
+      "prerequisites": [
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "duration_years": 4,
+      "credits": 140,
+      "description": "Applies mathematics and physics to natural systems, earth materials, analysis, and engineering-oriented field study.",
+      "possible_careers": [
+        "Ministry technical staff",
+        "Industry staff",
+        "Field engineer",
+        "Research staff"
+      ],
+      "slug": "geological_geo_engineering_science",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 8,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 9,
+      "major": "Chemical and Food Engineering",
+      "macro_major": "Agriculture",
+      "prerequisites": [
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "duration_years": 5,
+      "credits": 120,
+      "description": "Focuses on food science, food processing, standards, quality control, industrial operations, and applied chemistry.",
+      "possible_careers": [
+        "Factory/industry staff",
+        "Food production staff",
+        "Research center staff",
+        "Agriculture development staff"
+      ],
+      "slug": "chemical_and_food_engineering",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 9,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 10,
+      "major": "Civil Engineering",
+      "macro_major": "Construction",
+      "prerequisites": [
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "duration_years": 5,
+      "credits": 120,
+      "description": "Covers construction materials, structural calculation, surveying, project management, and civil works.",
+      "possible_careers": [
+        "Construction company staff",
+        "Public works staff",
+        "Site engineer",
+        "Materials/production staff"
+      ],
+      "slug": "civil_engineering",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 10,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 11,
+      "major": "Electrical Power and Telecommunications Engineering",
+      "macro_major": "Advanced Manufacturing",
+      "prerequisites": [
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "duration_years": 5,
+      "credits": 120,
+      "description": "Studies electrical systems, power distribution, substations, telecommunications, automation, and industrial applications.",
+      "possible_careers": [
+        "Electrical company staff",
+        "Telecom staff",
+        "Factory technical staff",
+        "Government technical staff"
+      ],
+      "slug": "electrical_power_and_telecommunications_engineering",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 11,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 12,
+      "major": "Information Technology and Communication Engineering",
+      "macro_major": "Digital Technology",
+      "prerequisites": [
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "duration_years": 5,
+      "credits": 120,
+      "description": "Covers programming, operating systems, databases, networks, internet technologies, and communication systems.",
+      "possible_careers": [
+        "Teacher/lecturer",
+        "Telecom staff",
+        "IT systems staff",
+        "Private company staff"
+      ],
+      "slug": "information_technology_and_communication_engineering",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 12,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 13,
+      "major": "Industrial and Mechanical Engineering",
+      "macro_major": "Advanced Manufacturing",
+      "prerequisites": [
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "duration_years": 5,
+      "credits": 120,
+      "description": "Focuses on mechanics, materials, manufacturing, machine systems, industrial organization, and automation.",
+      "possible_careers": [
+        "Industrial ministry staff",
+        "Factory staff",
+        "Mechanical engineer",
+        "Technical officer"
+      ],
+      "slug": "industrial_and_mechanical_engineering",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 13,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 14,
+      "major": "Rural Engineering / Water Resources and Geodesy",
+      "macro_major": "Energy & Natural Resources",
+      "prerequisites": [
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "duration_years": 5,
+      "credits": 120,
+      "description": "Includes water resources, rural infrastructure, surveying, mapping, and geospatial measurement.",
+      "possible_careers": [
+        "Water resources staff",
+        "Rural development staff",
+        "Surveying staff",
+        "NGO/project staff"
+      ],
+      "slug": "rural_engineering_water_resources_and_geodesy",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 14,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 15,
+      "major": "Khmer Literature",
+      "macro_major": "Education",
+      "prerequisites": [
+        "Khmer Language",
+        "History"
+      ],
+      "duration_years": 4,
+      "credits": 165,
+      "description": "Studies Khmer language, literature, grammar, writing, cultural heritage, and research methods.",
+      "possible_careers": [
+        "Khmer lecturer/teacher",
+        "Writer/editor",
+        "Tourism/cultural staff",
+        "Government officer"
+      ],
+      "slug": "khmer_literature",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 15,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 16,
+      "major": "Philosophy",
+      "macro_major": "Public Service & Safety",
+      "prerequisites": [
+        "Khmer Language",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 164,
+      "description": "Covers philosophy, religion, social thought, politics, ethics, and critical reasoning.",
+      "possible_careers": [
+        "Lecturer/teacher",
+        "Government officer",
+        "Company staff",
+        "NGO staff"
+      ],
+      "slug": "philosophy",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 16,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 17,
+      "major": "History",
+      "macro_major": "Education",
+      "prerequisites": [
+        "History",
+        "Khmer Language"
+      ],
+      "duration_years": 4,
+      "credits": 148,
+      "description": "Studies Cambodian and world history, historical research, heritage, and historical tourism.",
+      "possible_careers": [
+        "History lecturer/teacher",
+        "Government officer",
+        "NGO staff",
+        "Private company staff"
+      ],
+      "slug": "history",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 17,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 18,
+      "major": "Geography and Land Management",
+      "macro_major": "Energy & Natural Resources",
+      "prerequisites": [
+        "Geography",
+        "Mathematics"
+      ],
+      "duration_years": 4,
+      "credits": 160,
+      "description": "Covers physical and human geography, international transport, land planning, environment, and development.",
+      "possible_careers": [
+        "Geography lecturer",
+        "Environmental officer",
+        "Researcher",
+        "NGO staff"
+      ],
+      "slug": "geography_and_land_management",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 18,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 19,
+      "major": "Psychology",
+      "macro_major": "Public Service & Safety",
+      "prerequisites": [
+        "Mathematics",
+        "Biology"
+      ],
+      "duration_years": 4,
+      "credits": 163,
+      "description": "Focuses on psychology, personality, family and educational psychology, research, and applied practice.",
+      "possible_careers": [
+        "Psychology lecturer",
+        "Research staff",
+        "Company staff",
+        "NGO staff"
+      ],
+      "slug": "psychology",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 19,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 20,
+      "major": "Sociology",
+      "macro_major": "Public Service & Safety",
+      "prerequisites": [
+        "Khmer Language",
+        "Mathematics"
+      ],
+      "duration_years": 4,
+      "credits": 158,
+      "description": "Studies society, politics, culture, religion, environment, economics, and social research methods.",
+      "possible_careers": [
+        "Sociology lecturer",
+        "NGO staff",
+        "Company staff",
+        "Institution staff"
+      ],
+      "slug": "sociology",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 20,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 21,
+      "major": "Social Work / Community Studies",
+      "macro_major": "Public Service & Safety",
+      "prerequisites": [
+        "Khmer Language",
+        "Mathematics"
+      ],
+      "duration_years": 4,
+      "credits": 160,
+      "description": "Focuses on development projects, community systems, law, democracy, communication, and social support.",
+      "possible_careers": [
+        "Social studies lecturer",
+        "NGO staff",
+        "Company staff",
+        "Institution staff"
+      ],
+      "slug": "social_work_community_studies",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 21,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 22,
+      "major": "Media and Communication",
+      "macro_major": "Arts, Entertainment & Design",
+      "prerequisites": [
+        "English",
+        "Khmer Language"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Covers media foundations, media law and ethics, media research and management, public relations, and commerce.",
+      "possible_careers": [
+        "Media ministry/institution staff",
+        "Journalist/media worker",
+        "NGO communication staff"
+      ],
+      "slug": "media_and_communication",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 22,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 23,
+      "major": "Management",
+      "macro_major": "Management & Entrepreneurship",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 129,
+      "description": "Builds foundations in management, planning, strategy, and human resource management.",
+      "possible_careers": [
+        "Government or private institution staff",
+        "NGO staff",
+        "Entrepreneur"
+      ],
+      "slug": "management",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 23,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 24,
+      "major": "Marketing",
+      "macro_major": "Management & Entrepreneurship",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 129,
+      "description": "Covers marketing foundations, market research, strategy, pricing, and customer analysis.",
+      "possible_careers": [
+        "Government or private institution staff",
+        "NGO staff",
+        "Entrepreneur"
+      ],
+      "slug": "marketing",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 24,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 25,
+      "major": "Tourism",
+      "macro_major": "Hospitality & Tourism",
+      "prerequisites": [
+        "History",
+        "Geography"
+      ],
+      "duration_years": 4,
+      "credits": 129,
+      "description": "Studies national and international tourism, tourism analysis, hospitality, and tour guiding skills.",
+      "possible_careers": [
+        "Tourism ministry/department staff",
+        "Hotel/restaurant/tourism company staff",
+        "Entrepreneur"
+      ],
+      "slug": "tourism",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 25,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 26,
+      "major": "Economics and Commerce",
+      "macro_major": "Financial Services",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 129,
+      "description": "Covers economic theory, trade, international commerce, accounting, and banking foundations.",
+      "possible_careers": [
+        "Economics ministry staff",
+        "Economic analyst",
+        "Project analyst",
+        "NGO staff"
+      ],
+      "slug": "economics_and_commerce",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 26,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 27,
+      "major": "Law",
+      "macro_major": "Public Service & Safety",
+      "prerequisites": [
+        "History",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 146.5,
+      "description": "Studies legal foundations, legal theory, legal practice, and applied law.",
+      "possible_careers": [
+        "Court/judicial staff",
+        "Law office staff",
+        "NGO staff",
+        "Private/company legal staff"
+      ],
+      "slug": "law",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 27,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 28,
+      "major": "Public Administration",
+      "macro_major": "Public Service & Safety",
+      "prerequisites": [
+        "History",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 137,
+      "description": "Focuses on administration, legal-political systems, ethics, and public-sector practice.",
+      "possible_careers": [
+        "Public administration staff",
+        "Judicial/court-related staff",
+        "Private company staff",
+        "NGO staff"
+      ],
+      "slug": "public_administration",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 28,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 29,
+      "major": "Economic Science",
+      "macro_major": "Financial Services",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 131,
+      "description": "Builds foundations in economics, management, economic development, and economic planning.",
+      "possible_careers": [
+        "Economic and finance ministry staff",
+        "Bank staff",
+        "International organization staff",
+        "Private sector staff"
+      ],
+      "slug": "economic_science",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 29,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 30,
+      "major": "Banking and Finance",
+      "macro_major": "Financial Services",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 129,
+      "description": "Covers banking, finance, financial institutions, risk, and national/international finance systems.",
+      "possible_careers": [
+        "Bank staff",
+        "Financial institution staff",
+        "Insurance/market staff",
+        "Company staff"
+      ],
+      "slug": "banking_and_finance",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 30,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 31,
+      "major": "Accounting",
+      "macro_major": "Financial Services",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 132,
+      "description": "Focuses on accounting, auditing, tax, financial reporting, market management, and standards.",
+      "possible_careers": [
+        "Accounting services staff",
+        "Auditor",
+        "Bank/finance staff",
+        "Company staff"
+      ],
+      "slug": "accounting",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 31,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 32,
+      "major": "Information Systems Economics",
+      "macro_major": "Digital Technology",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 137,
+      "description": "Combines economics with computer science and applied information technology.",
+      "possible_careers": [
+        "Bank staff",
+        "Financial institution staff",
+        "Organization staff",
+        "Private company staff"
+      ],
+      "slug": "information_systems_economics",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 32,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 33,
+      "major": "Archaeology",
+      "macro_major": "Arts, Entertainment & Design",
+      "prerequisites": [
+        "History",
+        "Khmer Language"
+      ],
+      "duration_years": 4,
+      "credits": 144,
+      "description": "Studies archaeology, Cambodian and Asian heritage, cultural conservation, and restoration.",
+      "possible_careers": [
+        "Cultural heritage institution staff",
+        "Research staff",
+        "Government authority staff",
+        "International project staff"
+      ],
+      "slug": "archaeology",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 33,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 34,
+      "major": "Architecture and Urban Planning",
+      "macro_major": "Construction",
+      "prerequisites": [
+        "Physics",
+        "Mathematics",
+        "Drawing exam"
+      ],
+      "duration_years": 5,
+      "credits": 144,
+      "description": "Covers architecture, design, urban planning, city development, and project preparation.",
+      "possible_careers": [
+        "Architect",
+        "Construction/project staff",
+        "Conservation/restoration staff",
+        "Entrepreneur"
+      ],
+      "slug": "architecture_and_urban_planning",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 34,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 35,
+      "major": "Interior Architecture / Interior Design",
+      "macro_major": "Arts, Entertainment & Design",
+      "prerequisites": [
+        "History",
+        "Khmer Language",
+        "Drawing exam"
+      ],
+      "duration_years": 4,
+      "credits": 150,
+      "description": "Focuses on interior spaces, decoration, Khmer aesthetics, and contemporary design practice.",
+      "possible_careers": [
+        "Construction/interior company staff",
+        "Designer",
+        "Entrepreneur"
+      ],
+      "slug": "interior_architecture_interior_design",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 35,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 36,
+      "major": "Fine Arts",
+      "macro_major": "Arts, Entertainment & Design",
+      "prerequisites": [
+        "History",
+        "Khmer Language",
+        "Drawing exam"
+      ],
+      "duration_years": 4,
+      "credits": 150,
+      "description": "Studies fine arts, drawing, Khmer art history, visual analysis, and creative production.",
+      "possible_careers": [
+        "Art/cultural institution staff",
+        "Museum/archive staff",
+        "Entrepreneur"
+      ],
+      "slug": "fine_arts",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 36,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 37,
+      "major": "Modern Sculpture",
+      "macro_major": "Arts, Entertainment & Design",
+      "prerequisites": [
+        "History",
+        "Khmer Language",
+        "Drawing exam"
+      ],
+      "duration_years": 4,
+      "credits": 150,
+      "description": "Focuses on sculpture, form, Khmer and modern art trends, and contemporary visual expression.",
+      "possible_careers": [
+        "Art/cultural institution staff",
+        "Conservation-related staff",
+        "Artist/entrepreneur"
+      ],
+      "slug": "modern_sculpture",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 37,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 38,
+      "major": "Visual Communication Design",
+      "macro_major": "Arts, Entertainment & Design",
+      "prerequisites": [
+        "History",
+        "Khmer Language",
+        "Drawing exam"
+      ],
+      "duration_years": 4,
+      "credits": 150,
+      "description": "Covers design production, packaging, commercial visuals, Khmer aesthetics, and communication design.",
+      "possible_careers": [
+        "Design/advertising staff",
+        "Printing/publishing staff",
+        "Entrepreneur"
+      ],
+      "slug": "visual_communication_design",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 38,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 39,
+      "major": "Human Resource Management",
+      "macro_major": "Management & Entrepreneurship",
+      "prerequisites": [
+        "Civics",
+        "Mathematics"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Focuses on workforce planning, recruitment, staff development, performance, labor conditions, and safety.",
+      "possible_careers": [
+        "HR staff in ministries",
+        "Company HR staff",
+        "NGO HR staff",
+        "International organization staff"
+      ],
+      "slug": "human_resource_management",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 39,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 40,
+      "major": "International Business",
+      "macro_major": "Management & Entrepreneurship",
+      "prerequisites": [
+        "Khmer Language",
+        "Mathematics"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Studies business management, international trade, leadership, ethics, and business risk reduction.",
+      "possible_careers": [
+        "Trade ministry/company staff",
+        "International organization staff",
+        "Business development staff",
+        "Entrepreneur"
+      ],
+      "slug": "international_business",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 40,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 41,
+      "major": "Hotel Management",
+      "macro_major": "Hospitality & Tourism",
+      "prerequisites": [
+        "Mathematics",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 132,
+      "description": "Covers hotel operations, management, staff training, and analysis of the hospitality sector.",
+      "possible_careers": [
+        "Hotel/restaurant company staff",
+        "Entrepreneur"
+      ],
+      "slug": "hotel_management",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 41,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 42,
+      "major": "English",
+      "macro_major": "Education",
+      "prerequisites": [
+        "Civics",
+        "English",
+        "English language entrance exam"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Builds English writing, reading, listening, speaking, translation, and tour-guiding related communication skills.",
+      "possible_careers": [
+        "Teacher/lecturer",
+        "Government or company staff",
+        "NGO/international organization staff",
+        "Tour guide/interpreter"
+      ],
+      "slug": "english",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 42,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 43,
+      "major": "Korean Language",
+      "macro_major": "Education",
+      "prerequisites": [
+        "Civics",
+        "Khmer",
+        "English"
+      ],
+      "duration_years": 4,
+      "credits": 130,
+      "description": "Focuses on Korean reading, writing, listening, speaking, cultural understanding, and research basics.",
+      "possible_careers": [
+        "Ministry/institution staff",
+        "Korean-related company staff",
+        "NGO staff",
+        "Interpreter/tour guide"
+      ],
+      "slug": "korean_language",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 43,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 44,
+      "major": "Medicine",
+      "macro_major": "Health Science",
+      "prerequisites": [
+        "Biology",
+        "Chemistry",
+        "Civics"
+      ],
+      "duration_years": 8,
+      "credits": 270,
+      "description": "Covers general medicine, diagnosis, disease classification, and treatment selection.",
+      "possible_careers": [
+        "Health ministry staff",
+        "Public/private healthcare staff",
+        "Clinic owner/practitioner"
+      ],
+      "slug": "medicine",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 44,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 45,
+      "major": "Dentistry",
+      "macro_major": "Health Science",
+      "prerequisites": [
+        "Biology",
+        "Chemistry",
+        "Civics"
+      ],
+      "duration_years": 7,
+      "credits": 234,
+      "description": "Focuses on dentistry, oral structures, and dental diagnosis and treatment.",
+      "possible_careers": [
+        "Health ministry staff",
+        "Public/private dental staff",
+        "Clinic owner/practitioner"
+      ],
+      "slug": "dentistry",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 45,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 46,
+      "major": "Pharmacy",
+      "macro_major": "Health Science",
+      "prerequisites": [
+        "Biology",
+        "Chemistry",
+        "Civics"
+      ],
+      "duration_years": 5,
+      "credits": 180,
+      "description": "Studies pharmacy, drug composition, pharmacology, and drug effects in the human body.",
+      "possible_careers": [
+        "Health ministry staff",
+        "Public/private pharmacy staff",
+        "Pharmacy owner/practitioner"
+      ],
+      "slug": "pharmacy",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 46,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 47,
+      "major": "Medical Assistance / Nursing Support",
+      "macro_major": "Health Science",
+      "prerequisites": [
+        "Biology",
+        "Chemistry",
+        "Civics"
+      ],
+      "duration_years": 4,
+      "credits": 130,
+      "description": "Covers medical care support, methods of care, and patient assistance.",
+      "possible_careers": [
+        "Public/private healthcare staff",
+        "Support care staff"
+      ],
+      "slug": "medical_assistance_nursing_support",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 47,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 48,
+      "major": "Agricultural Science",
+      "macro_major": "Agriculture",
+      "prerequisites": [
+        "Chemistry",
+        "Biology"
+      ],
+      "duration_years": 4,
+      "credits": 160,
+      "description": "Includes soil science, crop production, plant protection, seed techniques, and farm management.",
+      "possible_careers": [
+        "Agriculture ministry staff",
+        "Trainer/lecturer",
+        "Research staff",
+        "Community development staff"
+      ],
+      "slug": "agricultural_science",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 48,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 49,
+      "major": "Animal Science and Veterinary Medicine",
+      "macro_major": "Agriculture",
+      "prerequisites": [
+        "Biology",
+        "Chemistry"
+      ],
+      "duration_years": 4,
+      "credits": 160,
+      "description": "Combines animal science, livestock production, feeds, breeding, animal disease diagnosis, and veterinary treatment.",
+      "possible_careers": [
+        "Government/institution staff",
+        "Livestock company/farm staff",
+        "Private veterinary practitioner"
+      ],
+      "slug": "animal_science_and_veterinary_medicine",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 49,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 50,
+      "major": "Forestry Science",
+      "macro_major": "Energy & Natural Resources",
+      "prerequisites": [
+        "Biology",
+        "Chemistry"
+      ],
+      "duration_years": 4,
+      "credits": 158,
+      "description": "Focuses on forest resource management, eco-tourism areas, conservation, nurseries, and project planning.",
+      "possible_careers": [
+        "Agriculture/environment ministry staff",
+        "Forestry administration staff",
+        "Private forestry company staff"
+      ],
+      "slug": "forestry_science",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 50,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 51,
+      "major": "Fisheries Science",
+      "macro_major": "Agriculture",
+      "prerequisites": [
+        "Biology",
+        "Chemistry"
+      ],
+      "duration_years": 4,
+      "credits": 102,
+      "description": "Covers aquatic life, fisheries services, extension work, and fisheries resource management.",
+      "possible_careers": [
+        "Fisheries administration staff",
+        "Agriculture/community officer",
+        "Aquaculture enterprise staff"
+      ],
+      "slug": "fisheries_science",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 51,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 52,
+      "major": "Agricultural Engineering and Mechanization",
+      "macro_major": "Agriculture",
+      "prerequisites": [
+        "Mathematics",
+        "Geography"
+      ],
+      "duration_years": 4,
+      "credits": 159,
+      "description": "Studies agricultural systems design, electrical systems, machinery management, operation, and repair.",
+      "possible_careers": [
+        "Agriculture ministry staff",
+        "Water resources staff",
+        "Private company staff",
+        "Entrepreneur"
+      ],
+      "slug": "agricultural_engineering_and_mechanization",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 52,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 53,
+      "major": "Agricultural Economics and Rural / Community Development",
+      "macro_major": "Agriculture",
+      "prerequisites": [
+        "Mathematics",
+        "Geography"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Focuses on agricultural economics, markets, consumer behavior, communication, and development work.",
+      "possible_careers": [
+        "Rural development ministry staff",
+        "Agriculture ministry staff",
+        "Trade ministry staff",
+        "NGO staff"
+      ],
+      "slug": "agricultural_economics_and_rural_community_development",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 53,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 54,
+      "major": "Agro-Industry / Agri-Business",
+      "macro_major": "Agriculture",
+      "prerequisites": [
+        "Biology",
+        "Chemistry"
+      ],
+      "duration_years": 4,
+      "credits": 150,
+      "description": "Combines food science, food processing technology, and post-harvest processing of agricultural products.",
+      "possible_careers": [
+        "Government institution staff",
+        "Private company staff",
+        "National/international organization staff",
+        "Food production company staff"
+      ],
+      "slug": "agro_industry_agri_business",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 54,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 55,
+      "major": "Land Management and Land Administration",
+      "macro_major": "Energy & Natural Resources",
+      "prerequisites": [
+        "Mathematics",
+        "Geography"
+      ],
+      "duration_years": 4,
+      "credits": 144,
+      "description": "Covers land administration, land law, valuation, master planning, surveying, GPS, GIS, and mapping.",
+      "possible_careers": [
+        "Land management ministry staff",
+        "Private surveying/GPS/company staff",
+        "National/international organization staff"
+      ],
+      "slug": "land_management_and_land_administration",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 55,
+        "chunk_strategy": "section_based"
+      }
+    },
+    {
+      "index": 56,
+      "major": "Natural Resource Management",
+      "macro_major": "Energy & Natural Resources",
+      "prerequisites": [
+        "Chemistry",
+        "Biology"
+      ],
+      "duration_years": 4,
+      "credits": 120,
+      "description": "Focuses on management of natural resources and environmentally related systems.",
+      "possible_careers": [
+        "Government resource/environment staff",
+        "Project/organization staff",
+        "Private sector staff"
+      ],
+      "slug": "natural_resource_management",
+      "source": {
+        "document": "Orientation Guide for Higher Education - (Uni + Major).pdf",
+        "extraction_basis": "major detail section",
+        "status": "grounded_from_uploaded_pdf",
+        "confidence_note": "Grounded and paraphrased from noisy PDF text extraction; verify names/translations before thesis submission."
+      },
+      "universities_in_cambodia": [],
+      "related_majors": [],
+      "recommended_projects": [],
+      "rag_metadata": {
+        "document_type": "major_profile",
+        "source_major_index": 56,
+        "chunk_strategy": "section_based"
+      }
+    }
+  ]
+}

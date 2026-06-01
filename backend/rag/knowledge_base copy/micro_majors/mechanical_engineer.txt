@@ -1,0 +1,28 @@
+Major: Mechanical Engineering
+
+Description:
+Mechanical Engineering focuses on designing, analyzing, manufacturing, and improving machines, mechanical systems, and industrial equipment. It combines mathematics, physics, materials, mechanics, and engineering design to solve problems in manufacturing, energy, transportation, automation, and production systems.
+
+Key Topics:
+Engineering Mechanics, Thermodynamics, Fluid Mechanics, Materials Science, Machine Design, Manufacturing Processes, Control Systems, Automation, Industrial Systems, CAD Design
+
+Required Skills:
+Analytical thinking, problem-solving, mathematics ability, physics understanding, technical drawing, attention to detail, teamwork, communication
+
+Recommended High School Subjects:
+Mathematics, Physics, English, Computer, Chemistry
+
+Related Majors:
+Industrial Engineering, Mechatronics Engineering, Electrical Engineering, Automobile Engineering, Manufacturing Engineering
+
+Suggested Projects:
+Mini robotic arm, automatic conveyor system, solar-powered mechanical device, machine part design, cooling system model, small-scale manufacturing process improvement
+
+Possible Careers:
+Mechanical Engineer, Maintenance Engineer, Design Engineer, Production Engineer, Manufacturing Engineer, Industrial Engineer, Automation Engineer
+
+Universities in Cambodia:
+Institute of Technology of Cambodia (ITC), Royal University of Agriculture (RUA), Cambodia University of Technology and Science (CamTech)
+
+Beginner Roadmap:
+Build strong mathematics and physics foundation -> Learn engineering drawing and basic mechanics -> Study thermodynamics and fluid mechanics -> Practice CAD and machine design tools -> Learn manufacturing and industrial systems -> Build simple mechanical projects -> Explore automation and control basics -> Gain practical lab or internship experience

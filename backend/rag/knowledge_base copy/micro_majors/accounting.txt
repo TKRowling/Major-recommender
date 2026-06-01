@@ -1,0 +1,28 @@
+Major: Accounting
+
+Description:
+Accounting focuses on recording, organizing, analyzing, and reporting financial information to support decision-making in businesses and organizations. It combines financial knowledge, accuracy, and analytical thinking to help manage income, expenses, assets, liabilities, and overall financial performance.
+
+Key Topics:
+Financial Accounting, Managerial Accounting, Cost Accounting, Taxation, Auditing, Financial Reporting, Budgeting, Accounting Information Systems, Business Finance
+
+Required Skills:
+Attention to detail, working with numbers, analytical thinking, accuracy, responsibility, organization, communication, ethical awareness
+
+Recommended High School Subjects:
+Mathematics, English, Economics, Business Studies
+
+Related Majors:
+Finance, Business Administration, Economics, Banking, Management
+
+Suggested Projects:
+Personal budget tracker, small business financial report, expense analysis dashboard, break-even analysis, tax calculation practice, accounting record simulation
+
+Possible Careers:
+Accountant, Auditor, Tax Officer, Bookkeeper, Finance Officer, Financial Analyst, Budget Analyst
+
+Universities in Cambodia:
+CamEd Business School, University of Cambodia (UC), National University of Management (NUM), Vanda Institute of Accounting, Institute of Finance and Accounting (IFA), Paragon International University, De Montfort University Cambodia, East Asia Management University (EAMU)
+
+Beginner Roadmap:
+Learn basic accounting concepts -> Understand assets, liabilities, and equity -> Practice journal entries and ledgers -> Study financial statements -> Learn budgeting and taxation basics -> Practice using spreadsheets -> Work on small accounting case studies -> Build practical experience

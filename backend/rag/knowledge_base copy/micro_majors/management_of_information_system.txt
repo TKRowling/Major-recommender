@@ -1,0 +1,28 @@
+Major: Management of Information Systems
+
+Description:
+Management of Information Systems focuses on using technology, data, and information systems to support business operations and decision-making. It combines business knowledge, computer-based systems, and management skills to help organizations design, analyze, implement, and manage information systems effectively.
+
+Key Topics:
+Information Systems, Database Management, Business Processes, Systems Analysis and Design, IT Project Management, Business Intelligence, Enterprise Systems, Systems Integration, Data Management, Digital Transformation
+
+Required Skills:
+Problem-solving, analytical thinking, communication, teamwork, business understanding, technical understanding, attention to detail, adaptability
+
+Recommended High School Subjects:
+Mathematics, English, Computer, Economics, Business Studies
+
+Related Majors:
+Information Technology, Computer Science, Business Administration, Data Science, Accounting, Digital Business
+
+Suggested Projects:
+Inventory management system, student information system, sales reporting dashboard, business process automation project, customer database system, IT project planning case study
+
+Possible Careers:
+MIS Officer, Business Analyst, Systems Analyst, IT Project Coordinator, Database Administrator, ERP Support Specialist, Business Intelligence Assistant
+
+Universities in Cambodia:
+Paragon International University
+
+Beginner Roadmap:
+Learn computer fundamentals -> Study basic business concepts -> Learn spreadsheets and databases -> Understand information systems and business processes -> Practice systems analysis and reporting -> Learn project management and enterprise systems -> Build simple business-tech projects -> Gain internship or real-world experience

@@ -1,0 +1,28 @@
+Major: Data Science
+
+Description:
+Data Science focuses on using data to solve problems and support decision-making. It combines mathematics, statistics, programming, data handling, and machine learning to analyze information and generate useful insights for research, business, industry, and public organizations.
+
+Key Topics:
+Statistics, Mathematical Foundations, Python Programming, SQL, Data Handling and Preprocessing, Machine Learning, Deep Learning, Data Visualization, Natural Language Processing, Databases, Research Methodology, Ethical Considerations
+
+Required Skills:
+Analytical thinking, problem-solving, programming, statistical reasoning, communication, attention to detail, critical thinking, data handling, curiosity, teamwork
+
+Recommended High School Subjects:
+Mathematics, English, Computer, Physics, Statistics
+
+Related Majors:
+Computer Science, Information Technology, Artificial Intelligence, Mathematics, Business Analytics, Data Engineering
+
+Suggested Projects:
+Sales prediction, dashboard creation, student performance analysis, customer segmentation, sentiment analysis, recommendation system, fraud detection, data cleaning and visualization project
+
+Possible Careers:
+Data Analyst, Data Scientist, Business Intelligence Analyst, Machine Learning Engineer, Data Engineer, Research Assistant, AI/Data Researcher
+
+Universities in Cambodia:
+Royal University of Phnom Penh (RUPP), Cambodia Academy of Digital Technology (CADT), Paragon International University, Institute of Technology of Cambodia (ITC), Cambodia University of Technology and Science (CamTech), IT Academy STEP Cambodia Institute 
+
+Beginner Roadmap:
+Learn Excel and basic data handling -> Learn Python programming -> Study statistics and probability -> Learn SQL and databases -> Practice data cleaning and visualization -> Study machine learning basics -> Build small real-world projects -> Create a portfolio

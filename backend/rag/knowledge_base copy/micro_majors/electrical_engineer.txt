@@ -1,0 +1,28 @@
+Major: Electrical Engineering
+
+Description:
+Electrical Engineering focuses on the study, design, control, and application of electricity, electronics, energy systems, and automated technologies. It combines mathematics, physics, circuit theory, and engineering principles to develop systems used in power, communication, automation, and modern industry.
+
+Key Topics:
+Electric Circuits, Electronics, Electrical Energy, Power Systems, Control Systems, Automation, Embedded Systems, Telecommunication, Networking, Electrical Machines
+
+Required Skills:
+Analytical thinking, problem-solving, mathematics ability, physics understanding, attention to detail, technical reasoning, teamwork, communication
+
+Recommended High School Subjects:
+Mathematics, Physics, English, Computer, Chemistry
+
+Related Majors:
+Electronics Engineering, Energy Engineering, Mechatronics, Mechanical Engineering, Information and Communication Engineering, Telecommunication Engineering
+
+Suggested Projects:
+Smart home control system, solar energy monitoring system, automatic lighting system, motor control project, embedded sensor project, basic power distribution model
+
+Possible Careers:
+Electrical Engineer, Power Systems Engineer, Control Engineer, Automation Engineer, Electronics Engineer, Maintenance Engineer, Embedded Systems Engineer
+
+Universities in Cambodia:
+Institute of Technology of Cambodia (ITC), Pannasastra University of Cambodia (PUC), Cambodia University of Technology and Science (CamTech), Norton University, Royal University of Phnom Penh (RUPP), National University of Battambang (NUBB), Institute of Electrical Science (IES)
+
+Beginner Roadmap:
+Build strong mathematics and physics foundation -> Study basic electricity and circuits -> Learn electronics fundamentals -> Practice with simple electrical and embedded projects -> Study control systems and automation -> Learn power and energy concepts -> Use engineering software and lab tools -> Build technical portfolio and practical experience

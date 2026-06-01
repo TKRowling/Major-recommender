@@ -1,0 +1,28 @@
+Major: Cyber Security
+
+Description:
+Cyber Security focuses on protecting computer systems, networks, software, and data from digital attacks, unauthorized access, and security threats. It combines technical knowledge, risk awareness, and security practices to help individuals and organizations keep information safe.
+
+Key Topics:
+Network Security, Information Security, Computer Security, Cryptography, Ethical Hacking, Digital Forensics, Risk Management, System Security, Security Operations
+
+Required Skills:
+Analytical thinking, problem-solving, attention to detail, critical thinking, basic networking knowledge, responsibility, ethics, communication
+
+Recommended High School Subjects:
+Mathematics, English, Computer, Physics
+
+Related Majors:
+Computer Science, Information Technology, Network Engineering, Digital Forensics, Software Engineering
+
+Suggested Projects:
+Password strength checker, secure login system, network monitoring tool, phishing detection demo, vulnerability scanning practice, cyber awareness website
+
+Possible Careers:
+Cyber Security Analyst, Information Security Officer, Security Engineer, SOC Analyst, Penetration Tester, Network Security Administrator, Digital Forensics Analyst
+
+Universities in Cambodia:
+Cambodia University of Technology and Science (CamTech), Royal University of Phnom Penh (RUPP), Paragon International University
+
+Beginner Roadmap:
+Learn computer fundamentals -> Study networking basics -> Learn Linux fundamentals -> Understand common cyber threats -> Learn basic scripting -> Study network and system security -> Practice with labs and simulations -> Build small security projects

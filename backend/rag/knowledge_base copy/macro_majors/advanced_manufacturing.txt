@@ -1,0 +1,31 @@
+Macro-Major: Advanced Manufacturing
+
+Description:
+Advanced Manufacturing focuses on designing, producing, and improving products using modern machinery, automation, engineering systems, and production technologies. It combines technical knowledge, industrial processes, quality control, and innovation to support efficient and high-quality manufacturing in modern industries.
+
+Common Micro-Majors:
+Mechanical Engineering, Industrial Engineering, Mechatronics, Manufacturing Engineering, Automation Engineering, Electronics Engineering, Robotics, Quality Engineering, Production Engineering
+
+Key Topics:
+Manufacturing Processes, Automation, Industrial Systems, Quality Control, Robotics, Production Planning, Materials Processing, Machine Design, Process Improvement, Industrial Safety
+
+Common Skills:
+Analytical thinking, problem-solving, technical ability, mathematics ability, attention to detail, teamwork, communication, adaptability, innovation
+
+Recommended High School Subjects:
+Mathematics, Physics, Chemistry, Computer, English
+
+Common Careers:
+Production Engineer, Manufacturing Engineer, Industrial Engineer, Automation Engineer, Quality Control Engineer, Process Engineer, Robotics Technician, Plant Supervisor
+
+Learning Style:
+Students in this field often work on laboratory tasks, machine-related projects, process analysis, design work, and technical problem-solving. The learning process emphasizes engineering principles, production efficiency, modern technology, and practical application in industrial environments.
+
+Related Macro-Majors:
+Engineering, Digital Technology, Supply Chain and Transportation, Energy and Natural Resources
+
+Example Career Paths:
+- Manufacturing → Production Assistant → Production Engineer → Plant Manager
+- Industrial Engineering → Process Analyst → Industrial Engineer → Operations Manager
+- Automation → Automation Technician → Automation Engineer → Systems Specialist
+- Quality Control → QC Assistant → Quality Engineer → Quality Manager
