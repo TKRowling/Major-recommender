@@ -321,8 +321,55 @@ Main details:
 - Credits: {credits}
 - Possible careers: {", ".join(careers[:4])}
 """.strip()
+    
+    def handle_general_message(self, question):
+        q = self.normalize(question)
+
+        greeting_words = [
+            "hi", "hello", "hey", "yo", "good morning", "good afternoon",
+            "good evening", "សួស្តី", "sousdey"
+        ]
+
+        help_phrases = [
+            "what can you help", "what can you do", "help me",
+            "how can you help", "what do you do", "who are you",
+            "what is this chatbot"
+        ]
+
+        thanks_words = [
+            " Thank","thank","thanks", "thank you", "ok", "okay", "got it", "understood", 
+            "appreciate", "alright", "great", "good", "perfect", "awesome", "nice", "cool", "wonderful",
+        ]
+
+        if q in greeting_words or any(q.startswith(word) for word in greeting_words):
+            return (
+                "Hi! I can help you with major recommendations, university suggestions, "
+                "career paths, required subjects, skills, and study guidance. Ask me anything about choosing a major or planning your studies!"
+            )
+
+        if any(phrase in q for phrase in help_phrases):
+            return (
+                "I can help you with:\n"
+                "- Explaining majors such as Data Science, Cyber Security, Accounting, or Medicine\n"
+                "- Recommending majors based on your interests and skills\n"
+                "- Suggesting universities in Cambodia\n"
+                "- Showing possible careers for each major\n"
+                "- Explaining prerequisites, duration, credits, and project ideas for each major\n"
+            )
+
+        if q in thanks_words:
+            return "You're welcome! If you have more questions about majors, universities, or careers, just ask."
+
+        return None
 
     def answer_question(self, question):
+        general_answer = self.handle_general_message(question)
+
+        if general_answer:
+            return {
+                "answer": general_answer
+            }
+
         retrieved_chunks = rag_service.retrieve(question, top_k=10)
 
         if self.is_out_of_scope(question, retrieved_chunks):
