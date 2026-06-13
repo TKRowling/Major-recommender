@@ -5,19 +5,23 @@ import "../styles/app.css";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000/api";
 
 const SUGGESTIONS = [
-  "What majors fit someone who likes math and technology?",
-  "Recommend majors for business and leadership interests",
-  "What universities in Cambodia offer Computer Science?",
-  "What careers match Finance or Accounting?",
+  "What is Data Science, and what careers can it lead to?",
+  "What is the difference between AI and Data Science?",
+  "Which universities in Cambodia offer Computer Science?",
+  "What major fits business, technology, and data analysis interests?",
 ];
 
-async function askChatbot(question) {
+async function askChatbot(question, history = [], sessionId = "default-session") {
   const response = await fetch(`${API_BASE_URL}/chatbot`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ question }),
+    body: JSON.stringify({
+      question,
+      history,
+      session_id: sessionId,
+    }),
   });
 
   const data = await response.json();
@@ -37,7 +41,7 @@ function ChatbotPage() {
     {
       id: 1,
       sender: "bot",
-      text: "Hi! I’m your AI major advisor. Ask me about majors, universities, skills, or career paths.",
+      text: "Hi! I’m your AI major advisor. i can help you with the information about majors, universities, skills, or career paths.",
       time: "Now",
       sources: [],
     },
@@ -75,7 +79,12 @@ function ChatbotPage() {
     setLoading(true);
 
     try {
-      const result = await askChatbot(trimmed);
+      const historyForBackend = messages.slice(-8).map((message) => ({
+      role: message.sender === "user" ? "user" : "assistant",
+      content: message.text,
+      }));
+
+      const result = await askChatbot(trimmed, historyForBackend, "chatbot-session");
 
       const botReply = {
         id: Date.now() + 1,
@@ -178,9 +187,6 @@ function ChatbotPage() {
                   }`}
                 >
                   <p>{message.text}</p>
-
-
-
                   <span>{message.time}</span>
                 </div>
               </div>

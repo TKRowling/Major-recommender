@@ -1,27 +1,100 @@
-import os
+import logging
 import re
-import requests
+
 from dotenv import load_dotenv
 
+from app.services.cloudflare_ai_service import (
+    CloudflareAIError,
+    generate_answer_with_cloudflare,
+)
 from app.services.rag_service import rag_service
 
 
 load_dotenv()
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:1b")
-OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+logger = logging.getLogger(__name__)
+
+OUT_OF_SCOPE_ANSWER = (
+    "This question is outside the scope of my knowledge base. "
+    "I can only answer questions about majors, universities, careers, "
+    "skills, prerequisites, and study guidance."
+)
 
 
 class ChatbotService:
     def normalize(self, text):
         return re.sub(r"[^a-z0-9]+", " ", str(text).lower()).strip()
 
+    def handle_general_message(self, question):
+        q = self.normalize(question)
+
+        greetings = {
+            "hi", "hello", "hey", "yo", "good morning",
+            "good afternoon", "good evening", "sousdey", "សួស្តី"
+        }
+
+        thanks = {
+            "thank", "thanks", "thank you", "thank u", "thx",
+            "ty", "ok", "okay", "alright", "great", "nice",
+            "cool", "perfect", "awesome", "good", "got it"
+        }
+
+        goodbye = {"bye", "goodbye", "see you", "see ya"}
+
+        help_patterns = [
+            "what can you help", "what can you do", "how can you help",
+            "help me", "what do you do", "who are you",
+            "what is this chatbot", "tell me what you can do"
+        ]
+
+        if q in greetings:
+            return (
+                "Hi! I can help you with major recommendations, university suggestions, "
+                "career paths, required subjects, skills, prerequisites, and study guidance."
+            )
+
+        if any(pattern in q for pattern in help_patterns):
+            return (
+                "I can help you with:\n"
+                "- Explaining majors such as Data Science, Cyber Security, Accounting, Medicine, or Engineering\n"
+                "- Recommending majors based on interests and skills\n"
+                "- Suggesting universities in Cambodia\n"
+                "- Showing possible careers for each major\n"
+                "- Explaining prerequisites, duration, credits, and project ideas"
+            )
+
+        if q in thanks or any(word in q for word in ["thank", "thanks", "thx"]):
+            return (
+                "You're welcome. You can ask me about majors, universities, careers, "
+                "skills, prerequisites, or study guidance anytime."
+            )
+
+        if q in goodbye:
+            return "Goodbye! Good luck with your study and major selection."
+
+        return None
+
     def extract_target_major_hint(self, question):
         q = self.normalize(question)
 
         aliases = {
-            "computer science": ["computer science", "cs", "programming", "coding", "software", "information technology", "it"],
-            "information technology": ["information technology", "it", "computer science", "programming", "coding", "software"],
+            "computer science": [
+                "computer science", "cs", "programming", "coding",
+                "software", "information technology", "it"
+            ],
+            "information technology": [
+                "information technology", "it", "computer science",
+                "programming", "coding", "software"
+            ],
+            "data science": ["data science", "data analyst", "data analysis"],
+            "artificial intelligence": ["artificial intelligence", "ai", "machine learning"],
+            "cyber security": ["cyber security", "cybersecurity", "network security", "it security"],
+            "software engineering": ["software engineering", "software development"],
+            "business analytics": ["business analytics", "business analyst"],
+            "digital marketing": ["digital marketing", "online marketing"],
+            "financial technology": ["financial technology", "fintech"],
+            "ux ui design": ["ux ui", "ux/ui", "ui design", "ux design"],
+            "web and mobile development": ["web development", "mobile development", "mobile app"],
             "accounting": ["accounting", "accountant", "audit", "auditing"],
             "banking and finance": ["finance", "banking", "bank", "financial"],
             "english": ["english"],
@@ -41,7 +114,6 @@ class ChatbotService:
     def rerank_chunks(self, question, chunks):
         q = self.normalize(question)
         target_hint = self.extract_target_major_hint(question)
-
         reranked = []
 
         for item in chunks:
@@ -49,27 +121,22 @@ class ChatbotService:
             major = self.normalize(raw.get("major", ""))
             macro = self.normalize(raw.get("macro_major", ""))
             description = self.normalize(raw.get("description", ""))
-            keywords = self.normalize(" ".join(raw.get("rag_metadata", {}).get("retrieval_keywords", [])))
+            keywords = self.normalize(
+                " ".join(raw.get("rag_metadata", {}).get("retrieval_keywords", []))
+            )
 
             score = float(item.get("score", 0))
 
             if target_hint and target_hint in major:
                 score += 10
 
-            if target_hint in ["computer science", "information technology"]:
-                if "computer science" in major or "information technology" in major:
-                    score += 10
-                if "digital technology" in macro:
-                    score += 2
-                if any(term in description for term in ["software", "database", "network", "systems"]):
-                    score += 2
-
-            if target_hint in ["computer science", "information technology"]:
-                if any(wrong in major for wrong in ["english", "tourism", "law", "history", "khmer"]):
-                    score -= 8
-
             for word in q.split():
-                if len(word) >= 4 and (word in major or word in keywords or word in description):
+                if len(word) >= 4 and (
+                    word in major
+                    or word in macro
+                    or word in keywords
+                    or word in description
+                ):
                     score += 0.5
 
             reranked.append((score, item))
@@ -77,15 +144,22 @@ class ChatbotService:
         reranked.sort(key=lambda x: x[0], reverse=True)
         return [item for score, item in reranked]
 
-    def select_best_chunk(self, question, retrieved_chunks):
-        q = f" {question.lower()} "
+    def phrase_in_question(self, question, phrase):
+        normalized_question = f" {self.normalize(question)} "
+        normalized_phrase = self.normalize(phrase)
 
+        if normalized_phrase == "ai":
+            return re.search(r"\bai\b", normalized_question) is not None
+
+        return normalized_phrase in normalized_question
+
+    def select_best_chunks(self, question, retrieved_chunks, max_chunks=2):
         exact_map = {
             "data science": "Data Science",
             "cyber security": "Cyber Security",
             "cybersecurity": "Cyber Security",
             "artificial intelligence": "Artificial Intelligence",
-            " ai ": "Artificial Intelligence",
+            "ai": "Artificial Intelligence",
             "software engineering": "Software Engineering",
             "cloud computing": "Cloud Computing",
             "network engineering": "Network Engineering",
@@ -100,13 +174,24 @@ class ChatbotService:
             "mobile development": "Web and Mobile Development",
         }
 
-        for keyword, target_major in exact_map.items():
-            if keyword in q:
-                for chunk in retrieved_chunks:
-                    if chunk.get("major", "").lower() == target_major.lower():
-                        return [chunk]
+        requested_majors = []
 
-        return retrieved_chunks[:2]
+        for keyword, target_major in exact_map.items():
+            if self.phrase_in_question(question, keyword) and target_major not in requested_majors:
+                requested_majors.append(target_major)
+
+        selected = []
+
+        for target_major in requested_majors:
+            for chunk in retrieved_chunks:
+                if chunk.get("major", "").lower() == target_major.lower():
+                    selected.append(chunk)
+                    break
+
+        if selected:
+            return selected[:max_chunks]
+
+        return retrieved_chunks[:max_chunks]
 
     def is_out_of_scope(self, question, retrieved_chunks):
         if not retrieved_chunks:
@@ -120,30 +205,30 @@ class ChatbotService:
             "data science", "cyber security", "cybersecurity", "ai", "software",
             "business", "accounting", "finance", "medicine", "engineering", "law",
             "marketing", "design", "tourism", "agriculture", "health", "computer",
-            "technology", "english", "management", "economics"
+            "technology", "english", "management", "economics", "compare",
+            "difference", "different", "vs", "versus", "recommend", "suitable",
+            "choose", "fit"
         ]
 
         has_education_keyword = any(word in q for word in education_keywords)
         top_score = float(retrieved_chunks[0].get("score", 0))
 
-        if top_score < 0.35 and not has_education_keyword:
-            return True
-
-        return False
+        return top_score < 0.35 and not has_education_keyword
 
     def build_context(self, retrieved_chunks):
         context_blocks = []
 
         for index, item in enumerate(retrieved_chunks, start=1):
             raw = item["raw"]
-
             universities = raw.get("universities_in_cambodia", [])
             related_majors = raw.get("related_majors", [])
             projects = raw.get("recommended_projects", [])
+            related_fields = raw.get("related_fields", [])
+            retrieval_keywords = raw.get("rag_metadata", {}).get("retrieval_keywords", [])
 
             university_text = "\n".join([
                 f"- {u.get('name', '')}, {u.get('faculty', '')}. Evidence: {u.get('evidence', '')}"
-                for u in universities[:4]
+                for u in universities[:5]
             ])
 
             related_text = ", ".join([
@@ -151,7 +236,12 @@ class ChatbotService:
                 for r in related_majors[:5]
             ])
 
-            project_text = "\n".join([f"- {p}" for p in projects[:4]])
+            related_field_text = "\n".join([
+                f"- {field.get('name', '')}: {field.get('description', '')}"
+                for field in related_fields[:5]
+            ])
+
+            project_text = "\n".join([f"- {p}" for p in projects[:5]])
 
             context = f"""
 Source {index}
@@ -162,12 +252,16 @@ Prerequisites: {", ".join(raw.get("prerequisites", []))}
 Duration: {raw.get("duration_years", "")} years
 Credits: {raw.get("credits", "")}
 Possible Careers: {", ".join(raw.get("possible_careers", []))}
+Retrieval Keywords: {", ".join(retrieval_keywords[:15])}
 
 Universities in Cambodia:
 {university_text}
 
 Related Majors:
 {related_text}
+
+Related Fields:
+{related_field_text}
 
 Recommended Projects:
 {project_text}
@@ -176,52 +270,6 @@ Recommended Projects:
             context_blocks.append(context)
 
         return "\n\n---\n\n".join(context_blocks)
-
-    def generate_answer_with_ollama(self, question, context):
-        system_prompt = """
-You are ChomNeanh AI, an academic major guidance chatbot for students in Cambodia.
-
-Rules:
-- Answer only using the provided knowledge base context.
-- Do not invent universities, careers, subjects, duration, credits, or program details.
-- If the question is unrelated to majors, universities, careers, skills, prerequisites, or study guidance, say it is outside the scope of the knowledge base.
-- Use Source 1 as the main source.
-- Keep the answer short and clear.
-""".strip()
-
-        user_prompt = f"""
-User question:
-{question}
-
-Retrieved knowledge base context:
-{context}
-
-Answer naturally based only on the context.
-""".strip()
-
-        payload = {
-            "model": OLLAMA_MODEL,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
-            "stream": False,
-            "options": {
-                "temperature": 0.1,
-                "num_predict": 180,
-            },
-        }
-
-        response = requests.post(
-            f"{OLLAMA_BASE_URL}/api/chat",
-            json=payload,
-            timeout=45,
-        )
-
-        if response.status_code != 200:
-            raise RuntimeError(f"Ollama API error: {response.text}")
-
-        return response.json().get("message", {}).get("content", "").strip()
 
     def detect_question_type(self, question):
         q = question.lower()
@@ -257,6 +305,27 @@ Answer naturally based only on the context.
 
         return lines
 
+    def generate_comparison_fallback(self, retrieved_chunks):
+        if len(retrieved_chunks) < 2:
+            return None
+
+        first = retrieved_chunks[0]["raw"]
+        second = retrieved_chunks[1]["raw"]
+
+        return f"""
+Here is the difference between {first.get("major", "")} and {second.get("major", "")}:
+
+{first.get("major", "")}
+- Field: {first.get("macro_major", "")}
+- Focus: {first.get("description", "")}
+- Possible careers: {", ".join(first.get("possible_careers", [])[:4])}
+
+{second.get("major", "")}
+- Field: {second.get("macro_major", "")}
+- Focus: {second.get("description", "")}
+- Possible careers: {", ".join(second.get("possible_careers", [])[:4])}
+""".strip()
+
     def generate_fallback_answer(self, question, retrieved_chunks):
         question_type = self.detect_question_type(question)
         top = retrieved_chunks[0]["raw"]
@@ -277,11 +346,10 @@ Answer naturally based only on the context.
             if not lines:
                 return f"The knowledge base does not list universities for {major}."
 
-            return f"""
-For {major}, the knowledge base lists these universities in Cambodia:
-
-{chr(10).join(lines)}
-""".strip()
+            return (
+                f"For {major}, the knowledge base lists these universities in Cambodia:\n\n"
+                + "\n".join(lines)
+            )
 
         if question_type == "definition":
             return f"""
@@ -297,18 +365,16 @@ Main details:
 """.strip()
 
         if question_type == "careers":
-            return f"""
-For {major}, possible career paths include:
-
-{chr(10).join([f"- {career}" for career in careers])}
-""".strip()
+            return (
+                f"For {major}, possible career paths include:\n\n"
+                + "\n".join([f"- {career}" for career in careers])
+            )
 
         if question_type == "projects":
-            return f"""
-For {major}, recommended project ideas include:
-
-{chr(10).join([f"- {project}" for project in projects[:5]])}
-""".strip()
+            return (
+                f"For {major}, recommended project ideas include:\n\n"
+                + "\n".join([f"- {project}" for project in projects[:5]])
+            )
 
         return f"""
 The most relevant major is {major} ({macro}).
@@ -321,82 +387,127 @@ Main details:
 - Credits: {credits}
 - Possible careers: {", ".join(careers[:4])}
 """.strip()
-    
-    def handle_general_message(self, question):
-        q = self.normalize(question)
 
-        greeting_words = [
-            "hi", "hello", "hey", "yo", "good morning", "good afternoon",
-            "good evening", "សួស្តី", "sousdey"
+    def known_major_names(self):
+        return [
+            "Data Science",
+            "Artificial Intelligence",
+            "Cyber Security",
+            "Software Engineering",
+            "Computer Science / Information Technology",
+            "Information Technology",
+            "Business Analytics",
+            "Accounting",
+            "Banking and Finance",
+            "Digital Marketing",
+            "Financial Technology",
+            "Medicine",
+            "Pharmacy",
+            "Civil Engineering",
+            "Tourism",
+            "English",
+            "Law",
+            "UX/UI Design",
+            "Web and Mobile Development",
+            "Cloud Computing",
+            "Network Engineering",
         ]
 
-        help_phrases = [
-            "what can you help", "what can you do", "help me",
-            "how can you help", "what do you do", "who are you",
-            "what is this chatbot"
-        ]
+    def find_last_major_from_history(self, history):
+        if not isinstance(history, list):
+            return None
 
-        thanks_words = [
-            " Thank","thank","thanks", "thank you", "ok", "okay", "got it", "understood", 
-            "appreciate", "alright", "great", "good", "perfect", "awesome", "nice", "cool", "wonderful",
-        ]
+        major_names = self.known_major_names()
 
-        if q in greeting_words or any(q.startswith(word) for word in greeting_words):
-            return (
-                "Hi! I can help you with major recommendations, university suggestions, "
-                "career paths, required subjects, skills, and study guidance. Ask me anything about choosing a major or planning your studies!"
-            )
+        for message in reversed(history):
+            content = str(message.get("content", "")).lower()
 
-        if any(phrase in q for phrase in help_phrases):
-            return (
-                "I can help you with:\n"
-                "- Explaining majors such as Data Science, Cyber Security, Accounting, or Medicine\n"
-                "- Recommending majors based on your interests and skills\n"
-                "- Suggesting universities in Cambodia\n"
-                "- Showing possible careers for each major\n"
-                "- Explaining prerequisites, duration, credits, and project ideas for each major\n"
-            )
-
-        if q in thanks_words:
-            return "You're welcome! If you have more questions about majors, universities, or careers, just ask."
+            for major in major_names:
+                if major.lower() in content:
+                    return major
 
         return None
 
-    def answer_question(self, question):
+    def is_follow_up_question(self, question):
+        q = self.normalize(question)
+
+        follow_up_words = [
+            "that", "it", "this", "those", "them",
+            "the previous", "above", "last one",
+            "for that", "about that"
+        ]
+
+        return any(word in q for word in follow_up_words)
+
+    def resolve_follow_up_question(self, question, history):
+        if not self.is_follow_up_question(question):
+            return question
+
+        last_major = self.find_last_major_from_history(history)
+
+        if not last_major:
+            return question
+
+        q = question.lower()
+
+        if any(word in q for word in ["career", "job", "work", "become"]):
+            return f"What are the possible careers for {last_major}?"
+
+        if any(word in q for word in ["university", "universities", "school", "study"]):
+            return f"Which universities in Cambodia offer {last_major}?"
+
+        if any(word in q for word in ["project", "assignment", "portfolio"]):
+            return f"What projects are recommended for {last_major}?"
+
+        if any(word in q for word in ["subject", "prerequisite", "requirement"]):
+            return f"What are the prerequisites for {last_major}?"
+
+        return f"{question} about {last_major}"
+
+    def answer_question(self, question, history=None, session_id=None):
+        history = history or []
+
         general_answer = self.handle_general_message(question)
 
         if general_answer:
-            return {
-                "answer": general_answer
-            }
+            return {"answer": general_answer}
 
-        retrieved_chunks = rag_service.retrieve(question, top_k=10)
+        resolved_question = self.resolve_follow_up_question(question, history)
 
-        if self.is_out_of_scope(question, retrieved_chunks):
-            return {
-                "answer": (
-                    "This question is outside the scope of my knowledge base. "
-                    "I can only answer questions about majors, universities, careers, "
-                    "skills, prerequisites, and study guidance."
-                )
-            }
+        retrieved_chunks = rag_service.retrieve(resolved_question, top_k=10)
 
-        retrieved_chunks = self.rerank_chunks(question, retrieved_chunks)
-        final_chunks = self.select_best_chunk(question, retrieved_chunks)
+        if self.is_out_of_scope(resolved_question, retrieved_chunks):
+            return {"answer": OUT_OF_SCOPE_ANSWER}
+
+        retrieved_chunks = self.rerank_chunks(resolved_question, retrieved_chunks)
+        final_chunks = self.select_best_chunks(resolved_question, retrieved_chunks)
 
         try:
             context = self.build_context(final_chunks)
-            answer = self.generate_answer_with_ollama(question, context)
+            answer = generate_answer_with_cloudflare(
+                question=resolved_question,
+                context=context,
+                session_id=session_id,
+            )
 
             if not answer or len(answer.strip()) < 20:
-                answer = self.generate_fallback_answer(question, final_chunks)
+                answer = self.generate_fallback_answer(resolved_question, final_chunks)
 
-        except Exception:
-            answer = self.generate_fallback_answer(question, final_chunks)
+        except Exception as exc:
+            logger.warning(
+                "Cloudflare generation failed; using deterministic fallback: %s",
+                exc,
+            )
 
-        return {
-            "answer": answer
-        }
+            if any(word in resolved_question.lower() for word in ["difference", "different", "compare", "vs", "versus"]):
+                answer = (
+                    self.generate_comparison_fallback(final_chunks)
+                    or self.generate_fallback_answer(resolved_question, final_chunks)
+                )
+            else:
+                answer = self.generate_fallback_answer(resolved_question, final_chunks)
+
+        return {"answer": answer}
 
 
 chatbot_service = ChatbotService()

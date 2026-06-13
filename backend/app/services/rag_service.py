@@ -1,3 +1,4 @@
+import hashlib
 import json
 import os
 import pickle
@@ -13,14 +14,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DATA_PATH = os.path.join(
     BASE_DIR,
     "data",
-    "major_kb_modern_majors_v3.json"
+    "major_kb_modern_majors_v3.json",
 )
 
 VECTOR_DIR = os.path.join(BASE_DIR, "vector_store")
 INDEX_PATH = os.path.join(VECTOR_DIR, "major_index.faiss")
 CHUNKS_PATH = os.path.join(VECTOR_DIR, "major_chunks.pkl")
+META_PATH = os.path.join(VECTOR_DIR, "major_index_meta.json")
 
-EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL_NAME = os.getenv(
+    "EMBEDDING_MODEL_NAME",
+    "sentence-transformers/all-MiniLM-L6-v2",
+)
+FORCE_REBUILD = os.getenv("RAG_REBUILD_ON_START", "0") == "1"
 
 
 class RAGService:
@@ -31,10 +37,51 @@ class RAGService:
         self.index = None
         self.chunks = []
 
-        if os.path.exists(INDEX_PATH) and os.path.exists(CHUNKS_PATH):
+        if self.should_load_existing_store():
             self.load_vector_store()
         else:
             self.build_vector_store()
+
+    def current_data_hash(self):
+        if not os.path.exists(DATA_PATH):
+            return None
+
+        sha = hashlib.sha256()
+
+        with open(DATA_PATH, "rb") as file:
+            for chunk in iter(lambda: file.read(1024 * 1024), b""):
+                sha.update(chunk)
+
+        return sha.hexdigest()
+
+    def read_meta(self):
+        if not os.path.exists(META_PATH):
+            return {}
+
+        try:
+            with open(META_PATH, "r", encoding="utf-8") as file:
+                return json.load(file)
+        except Exception:
+            return {}
+
+    def should_load_existing_store(self):
+        if FORCE_REBUILD:
+            return False
+
+        if not (
+            os.path.exists(INDEX_PATH)
+            and os.path.exists(CHUNKS_PATH)
+            and os.path.exists(META_PATH)
+        ):
+            return False
+
+        meta = self.read_meta()
+
+        return (
+            meta.get("data_path") == DATA_PATH
+            and meta.get("data_sha256") == self.current_data_hash()
+            and meta.get("embedding_model") == EMBEDDING_MODEL_NAME
+        )
 
     def load_knowledge_base(self):
         if not os.path.exists(DATA_PATH):
@@ -259,6 +306,19 @@ Source References:
         with open(CHUNKS_PATH, "wb") as file:
             pickle.dump(self.chunks, file)
 
+        with open(META_PATH, "w", encoding="utf-8") as file:
+            json.dump(
+                {
+                    "data_path": DATA_PATH,
+                    "data_sha256": self.current_data_hash(),
+                    "embedding_model": EMBEDDING_MODEL_NAME,
+                    "total_chunks": len(self.chunks),
+                },
+                file,
+                ensure_ascii=False,
+                indent=2,
+            )
+
         print("Vector store created successfully.")
         print(f"Total chunks: {len(self.chunks)}")
         print(f"Knowledge base file: {DATA_PATH}")
@@ -284,7 +344,6 @@ Source References:
         )
 
         query_embedding = query_embedding.astype(np.float32)
-
         scores, indices = self.index.search(query_embedding, top_k)
 
         results = []

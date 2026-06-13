@@ -1,0 +1,6 @@
+{
+  "data_path": "C:\\Users\\Dell\\Desktop\\Code_deploy_ready\\Code\\backend\\app\\data\\major_kb_modern_majors_v3.json",
+  "data_sha256": "911a88c539da05db1c9752185d25235ad6f70ba0c210c2637dec15f985a64df6",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "total_chunks": 94
+}
