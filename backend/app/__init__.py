@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from flask import Flask
+from flask import Flask, jsonify
 from flask_cors import CORS
 
 from app.config import Config
@@ -29,11 +29,19 @@ def create_app():
         "http://127.0.0.1:5173",
         "http://localhost:5174",
         "http://127.0.0.1:5174",
+
+        # Your deployed Vercel frontend
+        "https://major-recommender-amber.vercel.app",
     ]
 
-    frontend_url = os.getenv("FRONTEND_URL")
+    frontend_url = os.getenv("FRONTEND_URL", "").strip()
+
     if frontend_url:
         allowed_origins.append(frontend_url.rstrip("/"))
+
+    allowed_origins = list(set(allowed_origins))
+
+    print("Allowed CORS origins:", allowed_origins)
 
     CORS(
         app,
@@ -44,7 +52,15 @@ def create_app():
                 "allow_headers": ["Content-Type", "Authorization"],
             }
         },
+        supports_credentials=True,
     )
+
+    @app.route("/")
+    def home():
+        return jsonify({
+            "status": "ok",
+            "message": "Major Recommender Backend is running."
+        }), 200
 
     from app.routes.health_routes import health_bp
     from app.routes.recommendation_routes import recommendation_bp
